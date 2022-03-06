@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from './Button';
+import { ButtonSelect } from './ButtonSelect';
 // import { text } from '@storybook/addon-knobs';
 
-const stories = storiesOf('Button', module);
+const stories = storiesOf('ButtonSelect', module);
 
-stories.add('Button', () => <Button/>, {
+stories.add('ButtonSelect', () => <ButtonSelect/>, {
    info: { inline: true },
    text: `
 
@@ -15,8 +15,7 @@ stories.add('Button', () => <Button/>, {
 
   ### Usage
   ~~~js
-  <Button/>
-  <Button>text</Button>
+  <ButtonSelect/>
   ~~~
 
 `

@@ -1,0 +1,38 @@
+.bbuutoonn-select-drop {
+    position: relative;
+
+    display: inline-flex;
+}
+
+.bbuutoonn-select-drop:hover .bbuutoonn-select-drop__items,
+.bbuutoonn-select-drop.bbuutoonn-select-drop_open .bbuutoonn-select-drop__items {
+
+
+    display: flex;
+
+}
+
+.bbuutoonn-select-drop:hover .bbuutoonn-select-drop__items .select-bbuutoonnss__items,
+.bbuutoonn-select-drop.bbuutoonn-select-drop_open .bbuutoonn-select-drop__items .select-bbuutoonnss__items {
+    border: 1px solid red;
+    background: lightgrey;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: min-content min-content min-content min-content;
+}
+
+.bbuutoonn-select-drop .bbuutoonn-select-drop__items {
+    display: none;
+}
+
+.bbuutoonn-select-drop .bbuutoonn {
+    width: auto;
+}

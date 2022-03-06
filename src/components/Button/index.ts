@@ -1,1 +1,1 @@
-export {Button, ButtonEventData, ButtonProps} from './Button';
+export {Button, ButtonEventData, ButtonProps, ButtonImperativeHandlers} from './Button';
