@@ -84,14 +84,9 @@ export const SelectButtons = React.forwardRef<SelectButtonsImperativeHandlers, S
         ));
     }, [arrLength]);
 
-
-
-
-
     const handleClick = React.useCallback(({value: item, selected, e}) => {
         let newValue = getValue(item);
 
-        console.log(nullAble, value === newValue, value, newValue)
         if (nullAble && value === newValue) {
             newValue = null
         }
@@ -128,14 +123,12 @@ export const SelectButtons = React.forwardRef<SelectButtonsImperativeHandlers, S
         focus: () => {
             const selectedButton = divRef?.current?.getElementsByClassName('button-select-selected')[0] as HTMLElement;
 
-            console.log(selectedButton);
             if (selectedButton) {
                 selectedButton.focus();
 
                 return true;
 
             } else {
-                console.log(2, divRef?.current?.getElementsByClassName('button'));
                 const firstButton = divRef?.current?.getElementsByClassName('button')[0] as HTMLElement;
 
                 if (firstButton) {
@@ -182,7 +175,6 @@ export const SelectButtons = React.forwardRef<SelectButtonsImperativeHandlers, S
                 isNextValue
             });
 
-            console.log(elRefs);
             (elRefs[nextValueIndex]?.current as any)?.focus();
         },
         prevValue: (e?) => {

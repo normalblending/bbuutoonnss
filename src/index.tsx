@@ -10,3 +10,5 @@ export {
     defaultGetValue
 } from './components/SelectButtons';
 export {SelectDropImperativeHandlers, SelectDropProps, SelectDrop} from './components/SelectDrop';
+export {SelectVideoDevice, SelectVideoDeviceProps, getVideoDevices} from './components/SelectVideoDevice';
+export {CameraService, CameraServiceInitParams} from './components/CameraService';
