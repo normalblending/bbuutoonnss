@@ -1,0 +1,8 @@
+.divDragWithPointerLock canvas {
+    display: none;
+}
+
+
+.divDragWithPointerLock {
+    border: 1px solid red;
+}

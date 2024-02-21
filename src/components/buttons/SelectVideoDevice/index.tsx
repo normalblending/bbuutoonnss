@@ -46,7 +46,7 @@ export const SelectVideoDevice: React.FC<SelectVideoDeviceProps> = (props) => {
             nullAble
             nullText={'-'}
             items={devices || []}
-            getValue={getValue || ((device) => device.deviceId)}
+            getValue={getValue || ((device) => <>{device.deviceId}</>)}
             getText={getText || ((device) => <span>{device.label}</span>)}
             onChange={handleSelectDevice}
         />

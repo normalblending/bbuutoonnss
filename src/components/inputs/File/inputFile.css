@@ -1,0 +1,45 @@
+
+.input-file {
+  display: inline-flex;
+
+}
+.input-file input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+
+  z-index: -1;
+}
+.input-file input:focus + label {
+  outline: 1px dotted black;
+  z-index: 1;
+}
+
+.input-file label {
+  text-align: center;
+  font-size: 11px;
+  line-height: normal;
+  display: inline-block;
+  background: lightgoldenrodyellow;
+  height: 20px;
+  width: 70px;
+  padding: 1px 7px 2px 7px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede #ababab #ababab #dedede;
+  cursor: pointer;
+}
+
+.input-file label:active {
+   outline: none;
+   z-index: 100;
+   border-style: solid;
+   border-color: #ababab #d3d3d3 #d3d3d3 #ababab;
+ }
+
+
+
+

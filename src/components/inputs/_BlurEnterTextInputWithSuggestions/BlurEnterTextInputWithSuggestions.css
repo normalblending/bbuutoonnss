@@ -1,0 +1,27 @@
+.blur-text-input-suggestions-container {
+    position: relative;
+}
+.blur-text-input-suggestions-input {
+    display: block;
+}
+
+
+.blur-text-input-suggestions-suggestions {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.blur-text-input-suggestions-suggestions > .current {
+    border: 1px solid black;
+}
+
+.blur-text-input-suggestions-container.focused > .blur-text-input-suggestions-suggestions {
+    visibility: visible;
+}
+
+.blur-text-input-suggestions-container.focused {
+}

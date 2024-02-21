@@ -1,0 +1,8 @@
+.drag-handler  canvas {
+    display: none;
+}
+
+.drag-handler {
+    touch-action: none;
+    /*border: 2px solid blue;*/
+}

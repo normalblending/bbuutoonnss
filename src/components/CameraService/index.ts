@@ -51,10 +51,11 @@ export class CameraService {
     }
 
     async start() {
-        if (!this.device)
-            return;
 
         this.isOn = true;
+
+        if (!this.device)
+            return;
 
         this.stream = await this.getMediaStreamToVideoElement(this.device, this.videoElement);
 
@@ -126,6 +127,8 @@ export class CameraService {
                 element.srcObject = stream;
                 element.play();
             }
+
+            console.log(2, stream.getVideoTracks(), stream.getVideoTracks()[0]?.getCapabilities())
             return stream;
         } else {
             return null
