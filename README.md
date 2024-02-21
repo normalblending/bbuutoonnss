@@ -1,3 +1,9 @@
 # bbuutoonnss
+ui-components and utils library for Rasterscape
 
->  buttons library
+`npm i`
+</br>
+`npm run build`
+</br>
+`npm link`
+
